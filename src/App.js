@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 
 /**
@@ -39,10 +39,7 @@ function pickTimeframe(idx = 0) {
   return DEFAULT_TIMEFRAMES[idx % DEFAULT_TIMEFRAMES.length];
 }
 
-function smartCap(s) {
-  if (!s) return s;
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
+
 
 function inferDomain(context) {
   const lc = context.toLowerCase();
